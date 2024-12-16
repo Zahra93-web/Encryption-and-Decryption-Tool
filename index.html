@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Text Encryption and Decryption Tool</h2>
+
+        <label for="message">Enter your message:</label>
+        <textarea id="message" rows="4" cols="50" placeholder="Enter text here"></textarea>
+        
+        <label for="shift">Enter a shift value (for Caesar Cipher):</label>
+        <input type="number" id="shift" value="3">
+
+        <div>
+            <button onclick="encryptText()">Encrypt</button>
+            <button onclick="decryptText()">Decrypt</button>
+        </div>
+
+        <h3>Result:</h3>
+        <textarea id="result" rows="4" cols="50" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
