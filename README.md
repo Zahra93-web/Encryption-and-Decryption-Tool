@@ -1,18 +1,19 @@
 Text Encryption and Decryption with File Upload
-Project Overview
-This web application allows users to encrypt or decrypt text using the Caesar Cipher. The tool can process both manually entered text and text uploaded from a file. It also allows users to specify a shift value for the cipher, enabling encryption and decryption of the file's contents.
-
+This web app lets users encrypt or decrypt text using the Caesar Cipher. You can either type the text directly or upload a file. You can also choose a shift value to change how the text is encrypted or decrypted.
 Features:
-Encrypt and decrypt text via Caesar Cipher.
-Upload a text file and process its contents for encryption/decryption.
-Specify a shift value for the cipher to control the encryption level.
-Display the result of the encryption or decryption in a text area.
-Technologies Used
-HTML: Structure of the web page.
-CSS: Styling for the layout and design.
-JavaScript: Logic for handling encryption, decryption, file reading, and user interaction.
-How to Use
-Manually Enter Text:
+Encrypt and decrypt text using the Caesar Cipher.
+Upload a text file to encrypt or decrypt its contents.
+Set a shift value to control how much the text is changed.
+See the result in a text box.
+Technologies Used:
+HTML: For building the webpage.
+CSS: For styling the page.
+JavaScript: For handling encryption, decryption, and user actions.
+How to Use:
+Enter Text Manually: Type your text into the box.
+Upload a File: Choose a text file to encrypt or decrypt.
+Set Shift Value: Pick a number to control how much the text is changed.
+View Result: See the encrypted or decrypted text in the box.
 
 Type the text you want to encrypt or decrypt in the text area labeled "Enter your message".
 Enter a shift value for the Caesar Cipher in the input box.
@@ -36,29 +37,5 @@ The app can process text files uploaded by the user. When a file is uploaded, it
 Encryption/Decryption Logic:
 
 The JavaScript functions for encryption and decryption loop through the text, shifting each letter by the specified amount. Non-alphabetical characters (like spaces or punctuation) remain unchanged.
-File Structure
-bash
-Copy code
-/index.html          # HTML file for the structure
-/style.css           # CSS file for styling
-/script.js           # JavaScript file for logic
-/README.md           # Project documentation
-To Run Locally
-Clone the repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/yourusername/encryption-decryption-tool.git
-Navigate to the project folder:
 
-bash
-Copy code
-cd encryption-decryption-tool
-Open index.html in your browser to use the application.
-
-Enhancements (Optional)
-Support for Additional File Types: Currently, the tool only supports .txt files, but you can modify the app to process other file types (e.g., .json or .csv).
-File Download Feature: Allow users to download the encrypted or decrypted text as a new file.
-Improved Error Handling: Handle errors more gracefully, especially when reading files that don't meet expectations.
-License
-This project is open source and available under the MIT License.
